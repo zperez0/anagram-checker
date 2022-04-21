@@ -9,10 +9,10 @@ class Anagram
   end
 
   def anagram_checker()
-    @word1 = 'bye'
-    @word2 = 'bye'
     if @word1 === @word2
       true
+    else
+      false
     end
   end
 end
