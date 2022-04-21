@@ -9,23 +9,18 @@ class Anagram
   end
 
   def anagram_checker()
-  @first_input = @first_input.chars
-  @second_input = @second_input.chars
-  [@first_input, @second_input]
+  @first_input = @first_input.chars.sort
+  @second_input = @second_input.chars.sort
+  if @first_input == @second_input
+    true
+  else
+    false
+    end
   end
 end
-  
 
 
 
-  # second_input = @word2.each_char do |letter|
-  #    [letter]
-  # end
-      # want to compare each letter 
-    # if first_input.match?(second_input) === second_input
-    #   true
-    # else
-    #   false
 
 
 
@@ -33,3 +28,4 @@ end
 # create antigram method ex: tea, eat
 # creat vowel method? use include?
 #  >> append
+# match? 
