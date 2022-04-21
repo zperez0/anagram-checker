@@ -14,7 +14,7 @@ describe(Anagram) do
     #   expect(input.anagram_checker).to(eq(false))
     # end
 
-  it('return true if both words are anagrams') do
+  it('return an array of characters for both words') do
     input = Anagram.new('hi', 'bye')
     expect(input.anagram_checker).to(eq([['h', 'i'], ['b', 'y', 'e']]))
     end
