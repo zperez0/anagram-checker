@@ -16,6 +16,11 @@ describe(Anagram) do
         expect(input.anagram?).to(eq('You need to input actual words.'))
       end
 
+      it('will check to see if actual word') do 
+        input = Anagram.new('!2', '@hg')
+        expect(input.anagram?).to(eq('You need to input actual words.'))
+      end
+
       it('will lowercase the users input') do
         input = Anagram.new('RUBY', 'bury')
         expect(input.anagram?).to(eq('These words are anagrams.'))
