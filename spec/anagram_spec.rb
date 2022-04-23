@@ -3,15 +3,17 @@ require('anagram')
 
 
 describe(Anagram) do
-  describe('#anagram_checker') do
-    it('return true if the words are an anagram') do 
+  describe('#anagram?') do
+    it('will check if inputs are anagram') do 
       input = Anagram.new('ruby', 'bury')
-      expect(input.anagram_checker).to(eq(true))
+      input2 = Anagram.new('tea', 'eat')
+      expect(input.anagram?).to(eq('These words are anagrams.'))
+      expect(input2.anagram?).to(eq('These words are anagrams.'))
       end
 
-      it('return false if the words are not an anagram') do 
-        input = Anagram.new('bye', 'by')
-        expect(input.anagram_checker).to(eq(false))
-        end
+      it('will check for vowels') do 
+        input = Anagram.new('1g32', 'znw')
+        expect(input.anagram?).to(eq('You need to input actual words.'))
+      end
+    end
   end
-end
