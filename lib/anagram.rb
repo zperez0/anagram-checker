@@ -4,8 +4,8 @@ class Anagram
   attr_reader :first_input, :second_input
 
   def initialize(first_input, second_input)
-    @first_input = first_input
-    @second_input = second_input
+    @first_input = first_input.downcase
+    @second_input = second_input.downcase
   end
 
   def anagram?()
