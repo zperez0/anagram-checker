@@ -16,4 +16,7 @@ class Anagram
       'You need to input actual words.'
     end
   end
+
+def antigram?()
+end
 end

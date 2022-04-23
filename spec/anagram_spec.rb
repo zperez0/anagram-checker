@@ -26,4 +26,11 @@ describe(Anagram) do
       expect(input.anagram?).to(eq('These words are anagrams.'))
     end
   end
+
+  describe('#antigram?') do
+    it('will check for if letter matches and are antigrams') do 
+      input = Anagram.new('bye', 'by')
+      expect(input.antigram?).to(eq('These words have no letter matches and are antigrams.'))
+    end
+  end
 end
