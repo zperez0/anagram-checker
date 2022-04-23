@@ -20,5 +20,10 @@ describe(Anagram) do
         input = Anagram.new('RUBY', 'bury')
         expect(input.anagram?).to(eq('These words are anagrams.'))
       end
+  
+    it('will check if two sentences are an anagram') do
+      input = Anagram.new('The Morse Code', 'Here come dots')
+      expect(input.anagram?).to(eq('These words are anagrams.'))
     end
   end
+end
