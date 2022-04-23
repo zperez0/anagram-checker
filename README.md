@@ -16,7 +16,7 @@ This application was created to demonstrate my knowledge and understanding of ho
 
 ## Setup/Installation Requirements
 
-* _Go to [GitHub]()_
+* _Go to [GitHub](https://github.com/zperez0/anagram-checker)_
 * _Clone git repository to local machine_
 * _Navigate to root folder and open directory with VScode_
 * _Install packages by typing in the terminal:_
