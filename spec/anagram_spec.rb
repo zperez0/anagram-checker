@@ -33,8 +33,15 @@ describe(Anagram) do
 
   describe("#antigram?") do
     it("will check for if letter matches and are antigrams") do
-      input = Anagram.new("bye", "by")
+      input = Anagram.new("cat", "dog")
       expect(input.antigram?).to(eq("These words have no letter matches and are antigrams."))
+    end
+  end
+
+  describe("#neither?") do
+    it("will check if neither words are anagrams nor antigrams") do
+      input = Anagram.new("try", "tri")
+      expect(input.neither?).to(eq("These words are neither anagram nor antigram"))
     end
   end
 end
